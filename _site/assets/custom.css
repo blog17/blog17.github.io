@@ -1,0 +1,47 @@
+/*******************************************************************************
+CUSTOM STYLES
+
+Add your custom CSS styles here to override or extend the default styles.
+*******************************************************************************/
+
+header nav a,
+header nav a:link,
+header nav a:visited {
+    font-weight: 800;
+    color: #111 !important;
+}
+
+header nav a:hover,
+header nav a:focus-visible,
+header nav a:active {
+    color: #111 !important;
+}
+
+html[data-theme="dark"] header nav a,
+html[data-theme="dark"] header nav a:link,
+html[data-theme="dark"] header nav a:visited,
+html[data-theme="dark"] header nav a:hover,
+html[data-theme="dark"] header nav a:focus-visible,
+html[data-theme="dark"] header nav a:active {
+    color: #eee !important;
+}
+
+.marginnote .home-sidebar {
+    font-size: 1.35rem !important;
+    line-height: 1.5 !important;
+}
+
+.marginnote .home-sidebar a,
+.marginnote .home-sidebar strong {
+    font-size: inherit !important;
+}
+
+.home-title {
+    font-size: 3.45rem !important;
+    line-height: 1.15 !important;
+}
+
+.marginnote .post-share {
+    font-size: 1.25rem;
+    line-height: 1.5;
+}

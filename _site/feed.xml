@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Home</title>
+    <link>https://blog17.github.io</link>
+    <description>博十七's Blog 首页</description>
+    <language>zh</language>
+    <lastBuildDate>Sun, 15 Feb 2026 19:45:40 +0000</lastBuildDate>
+    <atom:link href="https://blog17.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>临江仙·雪夜客中岁除</title>
+      <link>https://blog17.github.io/文学/2026-02-15-xue-yi-xiang-guo-nian/</link>
+      <guid isPermaLink="true">https://blog17.github.io/文学/2026-02-15-xue-yi-xiang-guo-nian/</guid>
+      <pubDate>Sun, 15 Feb 2026 00:00:00 +0000</pubDate>
+      <category>文学</category>
+      <description>以雪、过年、异乡为主题的一首宋词。</description>
+    </item>
+    <item>
+      <title>The Normal Distribution: A Fundamental Concept in Statistics</title>
+      <link>https://blog17.github.io/文学/2025-10-30-normal-distribution/</link>
+      <guid isPermaLink="true">https://blog17.github.io/文学/2025-10-30-normal-distribution/</guid>
+      <pubDate>Thu, 30 Oct 2025 00:00:00 +0000</pubDate>
+      <category>文学</category>
+      <description>An in-depth look at the normal distribution, its properties, significance, and real-world applications across various fields.</description>
+    </item>
+    <item>
+      <title>The Normal Distribution: A Fundamental Concept in Statistics</title>
+      <link>https://blog17.github.io/人物/2025-10-30-normal-distribution/</link>
+      <guid isPermaLink="true">https://blog17.github.io/人物/2025-10-30-normal-distribution/</guid>
+      <pubDate>Thu, 30 Oct 2025 00:00:00 +0000</pubDate>
+      <category>人物</category>
+      <description>An in-depth look at the normal distribution, its properties, significance, and real-world applications across various fields.</description>
+    </item>
+    <item>
+      <title>The Normal Distribution: A Fundamental Concept in Statistics</title>
+      <link>https://blog17.github.io/时事/2025-10-30-normal-distribution/</link>
+      <guid isPermaLink="true">https://blog17.github.io/时事/2025-10-30-normal-distribution/</guid>
+      <pubDate>Thu, 30 Oct 2025 00:00:00 +0000</pubDate>
+      <category>时事</category>
+      <description>An in-depth look at the normal distribution, its properties, significance, and real-world applications across various fields.</description>
+    </item>
+    <item>
+      <title>The Normal Distribution: A Fundamental Concept in Statistics</title>
+      <link>https://blog17.github.io/投资/2025-10-30-normal-distribution/</link>
+      <guid isPermaLink="true">https://blog17.github.io/投资/2025-10-30-normal-distribution/</guid>
+      <pubDate>Thu, 30 Oct 2025 00:00:00 +0000</pubDate>
+      <category>投资</category>
+      <description>An in-depth look at the normal distribution, its properties, significance, and real-world applications across various fields.</description>
+    </item>
+    <item>
+      <title>Monkeys vs Apes: Understanding the Difference</title>
+      <link>https://blog17.github.io/文学/2025-04-16-monkeys-apes/</link>
+      <guid isPermaLink="true">https://blog17.github.io/文学/2025-04-16-monkeys-apes/</guid>
+      <pubDate>Wed, 16 Apr 2025 00:00:00 +0000</pubDate>
+      <category>文学</category>
+      <description>Exploring the key differences between monkeys and apes, including physical traits, intelligence, and evolutionary relationships.</description>
+    </item>
+    <item>
+      <title>Monkeys vs Apes: Understanding the Difference</title>
+      <link>https://blog17.github.io/人物/2025-04-16-monkeys-apes/</link>
+      <guid isPermaLink="true">https://blog17.github.io/人物/2025-04-16-monkeys-apes/</guid>
+      <pubDate>Wed, 16 Apr 2025 00:00:00 +0000</pubDate>
+      <category>人物</category>
+      <description>Exploring the key differences between monkeys and apes, including physical traits, intelligence, and evolutionary relationships.</description>
+    </item>
+    <item>
+      <title>Monkeys vs Apes: Understanding the Difference</title>
+      <link>https://blog17.github.io/时事/2025-04-16-monkeys-apes/</link>
+      <guid isPermaLink="true">https://blog17.github.io/时事/2025-04-16-monkeys-apes/</guid>
+      <pubDate>Wed, 16 Apr 2025 00:00:00 +0000</pubDate>
+      <category>时事</category>
+      <description>Exploring the key differences between monkeys and apes, including physical traits, intelligence, and evolutionary relationships.</description>
+    </item>
+    <item>
+      <title>Monkeys vs Apes: Understanding the Difference</title>
+      <link>https://blog17.github.io/投资/2025-04-16-monkeys-apes/</link>
+      <guid isPermaLink="true">https://blog17.github.io/投资/2025-04-16-monkeys-apes/</guid>
+      <pubDate>Wed, 16 Apr 2025 00:00:00 +0000</pubDate>
+      <category>投资</category>
+      <description>Exploring the key differences between monkeys and apes, including physical traits, intelligence, and evolutionary relationships.</description>
+    </item>
+    <item>
+      <title>Iterators vs Generators in Python</title>
+      <link>https://blog17.github.io/文学/2024-10-04-iterators-generators/</link>
+      <guid isPermaLink="true">https://blog17.github.io/文学/2024-10-04-iterators-generators/</guid>
+      <pubDate>Fri, 04 Oct 2024 00:00:00 +0000</pubDate>
+      <category>文学</category>
+      <description>Understanding the differences between iterators and generators in Python, and when to use each.</description>
+    </item>
+    <item>
+      <title>Iterators vs Generators in Python</title>
+      <link>https://blog17.github.io/人物/2024-10-04-iterators-generators/</link>
+      <guid isPermaLink="true">https://blog17.github.io/人物/2024-10-04-iterators-generators/</guid>
+      <pubDate>Fri, 04 Oct 2024 00:00:00 +0000</pubDate>
+      <category>人物</category>
+      <description>Understanding the differences between iterators and generators in Python, and when to use each.</description>
+    </item>
+    <item>
+      <title>Iterators vs Generators in Python</title>
+      <link>https://blog17.github.io/时事/2024-10-04-iterators-generators/</link>
+      <guid isPermaLink="true">https://blog17.github.io/时事/2024-10-04-iterators-generators/</guid>
+      <pubDate>Fri, 04 Oct 2024 00:00:00 +0000</pubDate>
+      <category>时事</category>
+      <description>Understanding the differences between iterators and generators in Python, and when to use each.</description>
+    </item>
+    <item>
+      <title>Iterators vs Generators in Python</title>
+      <link>https://blog17.github.io/投资/2024-10-04-iterators-generators/</link>
+      <guid isPermaLink="true">https://blog17.github.io/投资/2024-10-04-iterators-generators/</guid>
+      <pubDate>Fri, 04 Oct 2024 00:00:00 +0000</pubDate>
+      <category>投资</category>
+      <description>Understanding the differences between iterators and generators in Python, and when to use each.</description>
+    </item>
+  </channel>
+</rss>
