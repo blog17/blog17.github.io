@@ -6,7 +6,7 @@
 
 = 时事
 
-中文博客样例可参考 #link("https://yousa-mirage.github.io/Blog")[我的个人网站]。
+无穷的远方，无数的人们，都和你我有关……
 
 == 2025
 

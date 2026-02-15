@@ -6,7 +6,7 @@
 
 = 投资
 
-中文博客样例可参考 #link("https://yousa-mirage.github.io/Blog")[我的个人网站]。
+通过市场验证自己的判断。
 
 == 2025
 
