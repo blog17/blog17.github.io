@@ -1,0 +1,106 @@
+name: Pubish
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+env:
+  BUILD_DIR: _site
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install system deps
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y wget xz-utils
+
+      - name: Install Typst (official binary)
+        run: |
+          set -euxo pipefail
+          wget -q https://github.com/typst/typst/releases/latest/download/typst-x86_64-unknown-linux-musl.tar.xz
+          tar -xf typst-x86_64-unknown-linux-musl.tar.xz
+
+          # Typst binary may be inside a subdirectory; locate it robustly
+          TYPST_BIN="$(find . -maxdepth 4 -type f -name typst -print | head -n 1)"
+          if [ -z "${TYPST_BIN}" ]; then
+            echo "ERROR: typst binary not found after extracting the archive."
+            echo "Top-level files:"
+            ls -la
+            echo "Files (first 200):"
+            find . -maxdepth 4 -type f -print | head -n 200
+            exit 1
+          fi
+
+          sudo install -m 0755 "${TYPST_BIN}" /usr/local/bin/typst
+          typst --version
+
+      - name: Install uv
+        run: |
+          python -m pip install --upgrade pip
+          pip install uv
+          uv --version
+
+      - name: Install requirements (if present)
+        run: |
+          if [ -f requirements.txt ]; then
+            uv pip install -r requirements.txt
+          fi
+
+      - name: Build site
+        run: |
+          uv run build.py build
+
+      - name: Validate build output exists
+        run: |
+          set -euxo pipefail
+          if [ ! -d "${BUILD_DIR}" ]; then
+            echo "ERROR: Build output directory '${BUILD_DIR}' not found."
+            exit 1
+          fi
+          if [ -z "$(ls -A "${BUILD_DIR}")" ]; then
+            echo "ERROR: Build output directory '${BUILD_DIR}' is empty."
+            exit 1
+          fi
+          echo "Build output OK: ${BUILD_DIR}"
+          ls -la "${BUILD_DIR}" | head -n 80
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ env.BUILD_DIR }}
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
