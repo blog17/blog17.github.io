@@ -7,7 +7,8 @@
 
 #html.h2(class: "home-title", "博十七's Blog")
 
-欢迎来到博十七的博客。一起记录，思考，沉淀。
+一起记录，思考，沉淀。
+
 实事求是，以史为鉴。 
 
 // AUTO_SIDEBAR_START
